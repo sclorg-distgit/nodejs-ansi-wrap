@@ -7,7 +7,7 @@
 Summary:       Create ansi colors by passing the open and close codes
 Name:          %{?scl_prefix}nodejs-%{npm_name}
 Version:       0.1.0
-Release:       2%{?dist}
+Release:       3%{?dist}
 License:       MIT
 URL:           https://github.com/jonschlinkert/ansi-wrap
 Source0:       http://registry.npmjs.org/%{npm_name}/-/%{npm_name}-%{version}.tgz
@@ -37,6 +37,9 @@ cp -pr index.js package.json %{buildroot}%{nodejs_sitelib}/%{npm_name}
 %{nodejs_sitelib}/%{npm_name}
 
 %changelog
+* Sun Feb 14 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 0.1.0-3
+- rebuilt
+
 * Wed Jan 13 2016 Tomas Hrcka <thrcka@redhat.com> - 0.1.0-2
 - Enable scl macros
 
